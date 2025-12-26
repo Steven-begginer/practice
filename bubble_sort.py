@@ -7,11 +7,9 @@ for i in range(len(a)-1):
             swap = True #no swap is false
         else:
             continue
-    if swap == False: #no swap is True. we can use "if not swap:" instead of "if swap == False". The location is to jump out of internal loop.
+    # this line is for jumping out of inner loop
+    if swap == False: #no swap is True. we can use "if not swap:" instead of "if swap == False". The location is to jump out of outer loop.
         break
-
 print(a)
 
-
-
-        
+#From above all, we know the "for" loop or "while loop", there is no input and output.
