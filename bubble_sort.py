@@ -1,11 +1,11 @@
-arr = [7,5,3,1]
-for i in range(len(arr)-1): 
-    for i in range(len(arr)-1):
-        if arr[i] > arr[i+1]:
-            arr[i], arr[i+1] = arr[i+1], arr[i] # "=" can change the function label, "==" is the condition label.
+a = [7,5,3,1]
+for i in range(len(a)-1): 
+    for i in range(len(a)-1):
+        if a[i] > a[i+1]:
+            a[i], a[i+1] = a[i+1], a[i] # "=" can change the function label, "==" is the condition label.
         else:
             continue
-print(arr)
+print(a)
 
 
 
