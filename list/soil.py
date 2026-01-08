@@ -8,6 +8,4 @@ while moisture > 20:
     Day += 1
     print(f"Day {Day}: moisture: {moisture}%")
 
-
 print("Time to water!")
-
