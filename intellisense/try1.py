@@ -18,16 +18,11 @@ z = math.floor((float(x) + float(y)) / 2 + 0.5)
 print("Your unit mark is", int(z))
 """
 
-bits = int(input("Input a number of bits: "))
-total_bits = bits
-
-bytes_ = bits // 8
-bits = bits % 8
-
-kb = bytes_ // 1024
-bytes_ = bytes_ % 1024
-
+total_bits = int(input("Input a number of bits: "))
+bytes = total_bits // 8
+remaining_bits = total_bits % 8
+kb = bytes // 1024
+remaining_bytes = bytes % 1024
 mb = kb // 1024
-kb = kb % 1024
-
-print(f"{total_bits} b = {mb} MB {kb} KB {bytes_} B {bits} b")
+remaining_kb = kb % 1024
+print(f"{total_bits} b = {mb} MB {remaining_kb} KB {remaining_bytes} B {remaining_bits} b")
